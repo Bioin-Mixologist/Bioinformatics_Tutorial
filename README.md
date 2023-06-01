@@ -10,4 +10,5 @@ Copyright © 2022 Lu Lab
 课后作业：
 ## [2.1.Basic Command](https://github.com/Bioin-Mixologist/Bioinformatics-Tutorial-/blob/main/2.1.Basic%20Command.md)
 ## [2.2.Practice Guide](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/2.1.Basic%20Command.md)
-## 2.3.Linux Bash(待更)
+## [2.3.Linux Bash](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/2.3.Linux%20Bash.md)
+## 3.1.BasicR(待更)
