@@ -11,4 +11,4 @@ Copyright © 2022 Lu Lab
 ## [2.1.Basic Command](https://github.com/Bioin-Mixologist/Bioinformatics-Tutorial-/blob/main/2.1.Basic%20Command.md)
 ## [2.2.Practice Guide](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/2.1.Basic%20Command.md)
 ## [2.3.Linux Bash](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/2.3.Linux%20Bash.md)
-## [3.1.BasicR](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/3.1.R%20Basics.md)
+## [3.1.Basic R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/3.1.R%20Basics.md)
