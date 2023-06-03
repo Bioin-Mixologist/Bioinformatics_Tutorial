@@ -11,7 +11,7 @@ Copyright © 2022 Lu Lab
 ## PART I. BASIC SKILLS
 ### 2.Linux
 #### [2.1.Basic Command](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%202.1.Basic%20Command.md)
-#### [2.2.Practice Guide](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/2.1.Basic%20Command.md)
+#### [2.2.Practice Guide](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%202.2.Practice%20Guide.md)
 #### [2.3.Linux Bash](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/2.3.Linux%20Bash.md)
 ### 3.R
 #### [3.1.Basic R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/3.1.R%20Basics.md)
