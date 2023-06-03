@@ -14,7 +14,7 @@ Copyright © 2022 Lu Lab
 #### [2.2.Practice Guide](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%202.2.Practice%20Guide.md)
 #### [2.3.Linux Bash](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%202.3.Linux%20Bash.md)
 ### 3.R
-#### [3.1.Basic R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/3.1.R%20Basics.md)
+#### [3.1.Basic R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%203.1.R%20Basics.md)
 #### [3.2.Plot with R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/3.2.Plot%20With%20R.md)
 ## PART II. BASIC ANALYSES
 ### 1.Blast(待更)
