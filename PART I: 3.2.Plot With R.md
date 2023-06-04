@@ -26,3 +26,4 @@ ggplot(iris, aes(x=Species, y=Sepal.Length, fill=Species)) + #指定按"Species"
         )+
   labs(title="Sepal Length Distribution", x="Species", y = "Sepal.Length") #标题内容，xy轴内容
 ```
+![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/3.2homework.png)
