@@ -3,7 +3,7 @@
 文件 [test_command.gtf](https://cloud.tsinghua.edu.cn/d/ad22768345664924b202/files/?p=%2FFiles%2FPART_I%2F2.linux%2Ftest_command.gtf), [test.gtf](https://cloud.tsinghua.edu.cn/d/ad22768345664924b202/files/?p=%2FFiles%2FPART_I%2F2.linux%2Ftest.gtf)
 
 ```shell
-wget #下载的是网页
+wget #直接下载的是网页，需要解析后的连接
 #文件通过浏览器下载
 ```
 
