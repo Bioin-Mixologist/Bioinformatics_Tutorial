@@ -9,14 +9,11 @@
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework_result2.png)
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework_result3.png)
 
-$$
-E = kmne^{- \lambda S}
-$$
+$$ E = kmne^{- \lambda S} $$
 E value: 在数据库随机搜索情况下，获得大于或等于当前比对分数的片段可能数目。
 
-$$
-p = 1 - e^{- E}
-$$
+$$ p = 1 - e^{- E}$$
+
 p value: 分值大于或等于当前分值的比对的随机发生概率。
 
 E value 和 p value是反映比对显著性的两种不同方式。
