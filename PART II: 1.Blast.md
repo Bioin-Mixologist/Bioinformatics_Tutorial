@@ -9,7 +9,7 @@
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework_result2.png)
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework_result3.png)
 
-$$ E = kmne^{- \lambda S} $$
+$$ E = {kmne^{- \lambda S}}$$
 E value: 在数据库随机搜索情况下，获得大于或等于当前比对分数的片段可能数目。
 
 $$ p = 1 - e^{- E}$$
