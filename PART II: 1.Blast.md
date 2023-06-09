@@ -3,11 +3,11 @@
 对于序列MSTRSVSSSSYRRMFGGPGTASRPSSSRSYVTTSTRTYSLGSALRPSTSRSLYASSPGGVYATRSSAVRL:
 
 1.请使用网页版的 blastp, 将上面的蛋白序列只与 mouse protein database 进行比对， 设置输出结果最多保留10个， E 值最大为 0.5。将操作过程和结果截图，并解释一下 E value和 P value 的实际意义。
-![1]([../../Typora_Picture/1.png](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework1.png))
-![2](../../Typora_Picture/2.png)
-![result1](../../Typora_Picture/result1.png)
-![result2](../../Typora_Picture/result2.png)
-![result3](../../Typora_Picture/result3.png)
+![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework1.png))
+![img](../../Typora_Picture/2.png)
+![img](../../Typora_Picture/result1.png)
+![img](../../Typora_Picture/result2.png)
+![img](../../Typora_Picture/result3.png)
 
 >$$
 E = kmne^{- \lambda S}
