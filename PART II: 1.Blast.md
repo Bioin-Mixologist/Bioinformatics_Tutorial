@@ -9,10 +9,11 @@
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework_result2.png)
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/1.Blast_homework_result3.png)
 
-$$ E = {kmne^{- \lambda S}}$$
+$$ E = kmne^{- \lambda S} $$
+
 E value: 在数据库随机搜索情况下，获得大于或等于当前比对分数的片段可能数目。
 
-$$ p = 1 - e^{- E}$$
+$$ p = 1 - e^{- E} $$
 
 p value: 分值大于或等于当前分值的比对的随机发生概率。
 
@@ -28,8 +29,13 @@ BLAST 的结果只列出 E value 。
 |  1   | 0.63212056 | 0.0001 | 0.00010000 |
 
 参考资料：
+
 https://www.ncbi.nlm.nih.gov/BLAST/tutorial/Altschul-1.html#head4
+
 http://abc.cbi.pku.edu.cn/talk/blast-kuang-c.pdf
+
 http://abc.cbi.pku.edu.cn/talk/blast-jiang-s.pdf
+
 http://abc.cbi.pku.edu.cn/talk/blast-kang-yj.pdf
+
 https://yj-mo.github.io/2020/09/30/Homework2/
