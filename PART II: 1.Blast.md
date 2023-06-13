@@ -36,3 +36,45 @@ http://abc.cbi.pku.edu.cn/talk/blast-jiang-s.pdf
 http://abc.cbi.pku.edu.cn/talk/blast-kang-yj.pdf
 
 https://yj-mo.github.io/2020/09/30/Homework2/
+
+2.请使用 Bash 脚本编程：将上面的蛋白序列**随机打乱生成10个序列**， 然后对这10个序列**两两之间进行 blast 比对**，输出并解释结果。（请上传bash脚本，注意做好重要code的注释；同时上传一个结果文件用来示例程序输出的结果以及你对这些结果的解释。）
+
+新建shuffle10.sh脚本，用于生成10个序列：
+
+```bash
+#!/bin/bash
+# shuffle a sequence 10 times
+# input sequence
+s="MSTRSVSSSSYRRMFGGPGTASRPSSSRSYVTTSTRTYSLGSALRPSTSRSLYASSPGGVYATRSSAVRL"
+
+# start index
+si=0
+L=${#s} # length of the sequence
+# end index
+ei=$(($L-1))
+echo "#shuffle 10 sequences" > shuffle10.txt
+
+for j in {1..10};do
+shuffled=""
+
+	for i in `seq ${si} ${ei} | shuf`;do
+  	# seq generate integers range from $si to $ei (include both $si and $ei)
+  	# shuf command randomize the order of these integers
+  	shuffled=${shuffled}${s:$i:1}
+  	# ${s:$i:1}: variable expansion, take substring start from $i with length 1, this operator in bash use 0 based coordinate
+  	# $shuffled${s:$i:1}: concatenate string $shuffled and string ${s:$i:1}
+	done
+
+	echo "original sequence: ${s}"
+	echo "shuffled sequence${j}: ${shuffled}"
+	echo ">sequence ${j}" >> shuffle10.txt
+	echo "${shuffled}" >> shuffle10.txt
+done
+#通过两个for循环嵌套，生成10个序列。
+#序列结果储存在shuffle10.txt文件中。
+```
+
+```shell
+#运行脚本
+bash shuffle10.sh
+```
