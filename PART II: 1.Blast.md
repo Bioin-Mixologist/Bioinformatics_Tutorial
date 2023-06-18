@@ -52,7 +52,7 @@ si=0
 L=${#s} # length of the sequence
 # end index
 ei=$(($L-1))
-echo "#shuffle 10 sequences" > shuffle10.txt
+> shuffle10.txt
 
 for j in {1..10};do
 shuffled=""
@@ -77,4 +77,68 @@ done
 ```shell
 #运行脚本
 bash shuffle10.sh
+```
+
+文件shuffle10.txt，用于建库(ShuffleGenome)。
+
+```shell
+#blast建库(蛋白)
+makeblastdb -dbtype prot -in ./shuffle10.txt -out database/ShuffleGenome
+```
+
+取shuffle10.txt的前两行，新文件shuffle1.txt，和建库比对。
+
+```shell
+#取sequence 1(前2行)，建新文件shuffle1.txt
+head -2 shuffle10.txt > s1.txt
+#blastp比对
+blastp -query shuffle1.txt -db database/ShuffleGenome -out output/blastp_shuffle1
+```
+
+结果文件解释：
+
+```bash
+Query= sequence 1 #输入的序列
+
+Length=70 #输入序列长度
+
+#比对到的库内序列依次排序
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+seqGene 1                                                             123     2e-43
+seqGene 5                                                             18.5    0.035
+seqGene 7                                                             16.9    0.16 
+seqGene 3                                                             15.0    0.79 
+seqGene 2                                                             14.6    0.88 
+seqGene 4                                                             13.9    2.1  
+
+#与SeqGene 1比对的详细信息
+>seqGene 1
+Length=70
+
+ Score = 123 bits (308),  Expect = 2e-43, Method: Compositional matrix adjust.
+ Identities = 70/70 (100%), Positives = 70/70 (100%), Gaps = 0/70 (0%)
+
+Query  1   RTGYVSASSMTYSTSAVSSMLSSGGSTVAPGSLPTPSRRYSSSGRYASGSSRRAPRTTSS  60
+           RTGYVSASSMTYSTSAVSSMLSSGGSTVAPGSLPTPSRRYSSSGRYASGSSRRAPRTTSS
+Sbjct  1   RTGYVSASSMTYSTSAVSSMLSSGGSTVAPGSLPTPSRRYSSSGRYASGSSRRAPRTTSS  60
+
+Query  61  VLTRLYRFRS  70
+           VLTRLYRFRS
+Sbjct  61  VLTRLYRFRS  70
+
+
+>seqGene 5
+Length=70
+
+ Score = 18.5 bits (36),  Expect = 0.035, Method: Compositional matrix adjust.
+ Identities = 10/17 (59%), Positives = 15/17 (88%), Gaps = 2/17 (12%)
+#identities一致性=完全一致的序列/比对上的序列；
+#positives(类似于similarity相似性)
+
+Query  42  SSGRYASGSSRRAPRTT  58
+           SSGRYA+G+  R+PR++
+Sbjct  51  SSGRYAAGT--RSPRSS  65
+...
 ```
