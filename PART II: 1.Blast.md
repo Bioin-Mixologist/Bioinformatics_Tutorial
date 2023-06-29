@@ -153,3 +153,22 @@ https://www.jianshu.com/p/9273eb6e2572
 https://www.bilibili.com/video/BV1DK411P776
 
 https://www.bilibili.com/video/av10042290
+
+4.我们常见的PAM250有如下图所示的两种（一种对称、一种不对称），请阅读一下 "Symmetry of the PAM matrices" @ wikipedia，再利用Google/wikipedia等工具查阅更多资料，然后总结和解释一下这两种（对称和不对称）PAM250不一样的原因及其在应用上的不同。
+
+计算PAM1时，
+如果认为氨基酸a和b之间的替换是**同等概率**的，那么得到的是对称的PAM矩阵；
+如果认为a->b和b->a替换的概率是不同的，及两个氨基酸之间的**替换具有倾向性**，那么得到的矩阵是不对称的。
+PAM1自乘250次后得到相应的非对称PAM250矩阵，代表蛋白序列的位点在自然选择压力下发生250次1%的突变概率。
+
+PAM-1矩阵适于用来比较亲缘关系非常近的序列，PAM-1000矩阵可以用来比较亲缘性非常远的序列。实践中用的最多的且比较折衷的矩阵是PAM-250。
+对称矩阵只需考虑半个矩阵分数，对蛋白序列每个位点的打分只需要简单相加对称矩阵中的分数，计算更加简单；
+不对称矩阵存储了替换的偏向性信息，更准确反映每个氨基酸分子的突变趋向。
+
+参考资料：
+
+http://staff.ustc.edu.cn/~zhaowei/bioinformatics2016/3-2,%D0%F2%C1%D0%B1%C8%B6%D4.pdf
+
+https://yj-mo.github.io/2020/09/30/Homework2/
+
+https://cloud.tsinghua.edu.cn/d/7856522150094e49967d/files/?p=%2F2021%E7%A7%8B%2F2021%E7%A7%8B-%E8%AF%BE%E5%A0%82%E5%88%86%E4%BA%AB%E8%8A%82%E9%80%89%E6%B1%87%E6%80%BB.pptx
