@@ -142,3 +142,14 @@ Query  42  SSGRYASGSSRRAPRTT  58
 Sbjct  51  SSGRYAAGT--RSPRSS  65
 ...
 ```
+3.解释blast 中除了动态规划（dynamic programming）还利用了什么方法来提高速度，为什么可以提高速度。
+
+使用启发式算法(Heuristic Algorithms)，降低计算量。先找到两条序列之间高度相似的小片(种子seed)；而后向两端延伸并比对。
+
+参考资料：
+
+https://www.jianshu.com/p/9273eb6e2572
+
+https://www.bilibili.com/video/BV1DK411P776
+
+https://www.bilibili.com/video/av10042290
