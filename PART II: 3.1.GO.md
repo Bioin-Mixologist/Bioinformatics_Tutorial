@@ -47,7 +47,7 @@ head(ego)
 
 ################################################################################
 library(ggplot2)
-#### 4) dotplot ################################################################
+#### 3) dotplot ################################################################
 dotplot(ego, split="ONTOLOGY", showCategory=5, label_format=50)+
   facet_grid(ONTOLOGY~., scale = "free")+
   theme(panel.grid = element_blank())+
