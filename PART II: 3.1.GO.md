@@ -58,6 +58,6 @@ dotplot(ego, split="ONTOLOGY", showCategory=5, label_format=50)+
 #### END #######################################################################
 ```
 
-
+![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/3.2homework.png)
 
 2.请问上面的例子中， Fold Enrichment和P value是如何计算的? 请写出公式，并解释原理。此外，在定义显著富集的 GO terms 时为什么一般不是参考P value的大小，而是要计算一个 FDR来做为参考？
