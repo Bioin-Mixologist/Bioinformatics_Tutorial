@@ -17,7 +17,7 @@ Copyright © 2022 Lu Lab
 #### [3.1.Basic R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%203.1.R%20Basics.md)
 #### [3.2.Plot with R](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20I%3A%203.2.Plot%20With%20R.md)
 ## PART II. BASIC ANALYSES
-### 1.Blast(待更)
+### [1.Blast](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II:%201.Blast.md)
 ### 3.Function Analysis
 #### 3.1.GO
 #### 3.2.KEGG
