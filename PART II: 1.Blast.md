@@ -154,7 +154,7 @@ https://www.bilibili.com/video/BV1DK411P776
 
 https://www.bilibili.com/video/av10042290
 
-4.我们常见的PAM250有如下图所示的两种（一种对称、一种不对称），请阅读一下 "Symmetry of the PAM matrices" @ wikipedia，再利用Google/wikipedia等工具查阅更多资料，然后总结和解释一下这两种（对称和不对称）PAM250不一样的原因及其在应用上的不同。
+4.我们常见的PAM250有两种（一种对称、一种不对称），请阅读一下 "Symmetry of the PAM matrices" @ wikipedia，再利用Google/wikipedia等工具查阅更多资料，然后总结和解释一下这两种（对称和不对称）PAM250不一样的原因及其在应用上的不同。
 
 计算PAM1时，
 如果认为氨基酸a和b之间的替换是**同等概率**的，那么得到的是对称的PAM矩阵；
