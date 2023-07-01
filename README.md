@@ -19,7 +19,7 @@ Copyright © 2022 Lu Lab
 ## PART II. BASIC ANALYSES
 ### [1.Blast](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II:%201.Blast.md)
 ### 3.Function Analysis
-#### [3.1.GO(待更)](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II%3A%203.1.GO.md)
+#### [3.1.GO](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II%3A%203.1.GO.md)
 #### 3.2.KEGG
 #### 3.3.GSEA
 
