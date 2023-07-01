@@ -39,4 +39,4 @@ dotplot(ekegg, showCategory=10, label_format=50)+
 
 #### END #######################################################################
 ```
-![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/3.1KEGG_enrichment.png)
+![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/3.2KEGG_enrichment.png)
