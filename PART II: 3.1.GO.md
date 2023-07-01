@@ -62,3 +62,39 @@ dotplot(ego, split="ONTOLOGY", showCategory=5, label_format=50)+
 ![img](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/others/3.1GO_enrichment.png)
 
 2.请问上面的例子中， Fold Enrichment和P value是如何计算的? 请写出公式，并解释原理。此外，在定义显著富集的 GO terms 时为什么一般不是参考P value的大小，而是要计算一个 FDR来做为参考？
+$$
+\text{Fold Enrichment} = \frac{\text{Gene Ratio}}{\text{Background Ratio}}
+$$
+
+$$
+p = 1 - \displaystyle\sum_{i = 0}^{k-1}\frac{{M \choose i}{{N-M} \choose {n-i}}} {{N \choose n}}
+$$
+
+> k是自定义基因列表中注释到目标基因集的基因数目，n是自定义基因列表的基因总数目，M是背景分布中被注释到目标基因集的基因数目，N是背景分布的基因总数。
+
+$$
+\begin{array}{lcc}
+\text{ } & \text{User Genes} & \text{Genome} \\
+\hline
+\text{In Pathway} & k & M \\
+\text{Not in Pathway} & n-k & N-M \\
+\hline
+\text{ } & n & N \\
+\end{array}
+$$
+
+本质是**列联表检验**问题，卡方检验(大样本趋向于无穷)。当理论频数小于5或加和样本总数小于40时，应该使用Fisher精确检验。
+Fisher精确检验本质上是**超几何分布检验**，转变为抽球问题。在N个基因中，有M个在通路中；随机抽取n个基因，观察到在通路中的基因个数为k个，出现该结果(或更罕见情况)的概率为P value。
+
+P value需要矫正。**因为在多次(成千上万次)检验过程中，不可避免地出现第1类错误**。因此通过对P value进行放大，更加严格地筛选检验结果。
+目前常用BH矫正方法：对每个p value做矫正，转换为q value；q value = p value * n / rank，其中rank是指p value从小到大排序后的次序。q value有时也被称为FDR(Fale Discover Rate)，经过BH矫正后的q value，若选择α为q value的阈值，那么FDR不会超过α。
+
+参考资料：
+http://www.pantherdb.org/tips/tips_geneListAnalysis.jsp
+https://www.jianshu.com/p/949626b18e69
+https://zhuanlan.zhihu.com/p/51546651
+https://zhuanlan.zhihu.com/p/50863682
+https://www.biostars.org/p/220465/
+https://yulab-smu.top/biomedical-knowledge-mining-book/enrichment-overview.html
+https://ke.qq.com/course/395709
+
