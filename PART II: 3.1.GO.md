@@ -91,10 +91,16 @@ P value需要矫正。**因为在多次(成千上万次)检验过程中，不可
 
 参考资料：
 http://www.pantherdb.org/tips/tips_geneListAnalysis.jsp
+
 https://www.jianshu.com/p/949626b18e69
+
 https://zhuanlan.zhihu.com/p/51546651
+
 https://zhuanlan.zhihu.com/p/50863682
+
 https://www.biostars.org/p/220465/
+
 https://yulab-smu.top/biomedical-knowledge-mining-book/enrichment-overview.html
+
 https://ke.qq.com/course/395709
 
