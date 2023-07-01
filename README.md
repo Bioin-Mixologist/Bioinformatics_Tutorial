@@ -20,7 +20,7 @@ Copyright © 2022 Lu Lab
 ### [1.Blast](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II:%201.Blast.md)
 ### 3.Function Analysis
 #### [3.1.GO](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II%3A%203.1.GO.md)
-#### 3.2.KEGG
+#### [3.2.KEGG](https://github.com/Bioin-Mixologist/Bioinformatics_Tutorial/blob/main/PART%20II%3A%203.2.KEGG.md)
 #### 3.3.GSEA
 
 Copyright 2023 © Bioin-Mixologist
