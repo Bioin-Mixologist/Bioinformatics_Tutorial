@@ -90,6 +90,7 @@ P value需要矫正。**因为在多次(成千上万次)检验过程中，不可
 目前常用BH矫正方法：对每个p value做矫正，转换为q value；q value = p value * n / rank，其中rank是指p value从小到大排序后的次序。q value有时也被称为FDR(Fale Discover Rate)，经过BH矫正后的q value，若选择α为q value的阈值，那么FDR不会超过α。
 
 参考资料：
+
 http://www.pantherdb.org/tips/tips_geneListAnalysis.jsp
 
 https://www.jianshu.com/p/949626b18e69
